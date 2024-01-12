@@ -11,7 +11,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import com.example.jobfinder.entities.Job;
-// import com.example.jobfinder.serviceImpls.JobSearchCriteria;
+// import com.example.jobfinder.serviceImpls.JobSearhCriteria;
 
 public interface JobRepository extends JpaRepository <Job, Long> {
     // add custom queries here

@@ -3557,3 +3557,287 @@ Caused by: org.postgresql.util.PSQLException: ERROR: relation "users" does not e
 22:40:56.456 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
 22:40:56.459 [restartedMain] INFO  c.e.jobfinder.JobFinderApplication - Started JobFinderApplication in 0.441 seconds (process running for 464.373)
 22:40:56.460 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+20:20:19.888 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.jobfinder.controllers.JobControllerTest]: JobControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:20:20.005 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.jobfinder.JobFinderApplication for test class com.example.jobfinder.controllers.JobControllerTest
+20:20:20.159 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+20:20:20.376 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+20:20:20.410 [main] INFO  c.e.j.controllers.JobControllerTest - Starting JobControllerTest using Java 17.0.8 with PID 60862 (started by hemmamano in /Users/hemmamano/Desktop/ntu-sctp/Module3_Project_Group2/job-finder)
+20:20:20.411 [main] INFO  c.e.j.controllers.JobControllerTest - No active profile set, falling back to 1 default profile: "default"
+20:20:21.268 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:20:21.360 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80 ms. Found 2 JPA repository interfaces.
+20:20:21.826 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:20:22.044 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:job-finder user=SA
+20:20:22.046 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:20:22.085 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:20:22.140 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+20:20:22.143 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+20:20:22.416 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:20:23.449 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20:20:23.523 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:20:24.349 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:20:24.528 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:20:24.661 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:job-finder'
+20:20:24.709 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+20:20:24.710 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+20:20:24.713 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+20:20:24.767 [main] INFO  c.e.j.controllers.JobControllerTest - Started JobControllerTest in 4.595 seconds (process running for 5.869)
+20:20:26.276 [main] INFO  c.e.j.serviceImpls.JobServiceImpl - findJobsByParam method being called
+20:20:26.276 [main] INFO  c.e.j.serviceImpls.JobServiceImpl - getAllJobs method being called
+20:20:26.508 [main] INFO  c.e.j.serviceImpls.JobServiceImpl - createJob method being called
+20:20:26.539 [main] INFO  c.e.j.serviceImpls.JobServiceImpl - createJob method being called
+20:20:26.561 [main] INFO  c.e.j.serviceImpls.JobServiceImpl - getJob method being called
+20:20:26.601 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.jobfinder.controllers.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:20:26.610 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.jobfinder.JobFinderApplication for test class com.example.jobfinder.controllers.UserControllerTest
+20:20:26.630 [main] INFO  c.e.j.controllers.UserControllerTest - Before each test in UserControllerTest class
+20:20:26.631 [main] INFO  c.e.j.controllers.UserControllerTest - testing valid checking working as expected during user creation
+20:20:26.698 [main] INFO  c.e.j.controllers.UserControllerTest - Before each test in UserControllerTest class
+20:20:26.706 [main] INFO  c.e.j.serviceImpls.UserServiceImpl - getAllUsers method being called
+20:20:26.755 [main] INFO  c.e.j.controllers.UserControllerTest - Before each test in UserControllerTest class
+20:20:26.759 [main] INFO  c.e.j.serviceImpls.UserServiceImpl - addJobToUser method being called
+20:20:26.803 [main] INFO  c.e.j.controllers.UserControllerTest - Before each test in UserControllerTest class
+20:20:26.804 [main] INFO  c.e.j.controllers.UserControllerTest - testing updateUser method from UserController
+20:20:26.809 [main] INFO  c.e.j.serviceImpls.UserServiceImpl - updateUser method being called
+20:20:26.846 [main] INFO  c.e.j.controllers.UserControllerTest - Before each test in UserControllerTest class
+20:20:26.847 [main] INFO  c.e.j.controllers.UserControllerTest - Deleting user that was newly created at the start of testing 
+20:20:26.860 [main] INFO  c.e.j.serviceImpls.UserServiceImpl - deleteUser method being called
+20:20:26.870 [main] INFO  c.e.j.controllers.UserControllerTest - Before each test in UserControllerTest class
+20:20:26.876 [main] INFO  c.e.j.controllers.UserControllerTest - creating valid user to test createUser method in UserController
+20:20:26.879 [main] INFO  c.e.j.serviceImpls.UserServiceImpl - createUser method being called
+20:20:26.901 [main] INFO  c.e.j.controllers.UserControllerTest - Before each test in UserControllerTest class
+20:20:26.902 [main] INFO  c.e.j.controllers.UserControllerTest - Testing getUserById in Usercontroller Method
+20:20:26.907 [main] INFO  c.e.j.serviceImpls.UserServiceImpl - getUser method being called
+20:20:26.924 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.jobfinder.services.JobServiceImplTest]: JobServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:20:26.948 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.jobfinder.JobFinderApplication for test class com.example.jobfinder.services.JobServiceImplTest
+20:20:26.954 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+20:20:26.982 [main] INFO  c.e.j.services.JobServiceImplTest - Starting JobServiceImplTest using Java 17.0.8 with PID 60862 (started by hemmamano in /Users/hemmamano/Desktop/ntu-sctp/Module3_Project_Group2/job-finder)
+20:20:26.982 [main] INFO  c.e.j.services.JobServiceImplTest - No active profile set, falling back to 1 default profile: "default"
+20:20:27.121 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:20:27.131 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+20:20:27.273 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+20:20:27.275 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:job-finder user=SA
+20:20:27.275 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+20:20:27.278 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:20:27.286 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:20:27.372 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20:20:27.385 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:20:27.571 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:20:27.609 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:20:27.646 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:job-finder'
+20:20:27.664 [main] INFO  c.e.j.services.JobServiceImplTest - Started JobServiceImplTest in 0.71 seconds (process running for 8.766)
+20:20:28.279 [main] INFO  c.e.j.serviceImpls.JobServiceImpl - updateJob method being called
+20:20:28.393 [main] INFO  c.e.j.serviceImpls.JobServiceImpl - deleteJob method being called
+20:20:28.421 [main] INFO  c.e.j.serviceImpls.JobServiceImpl - getJob method being called
+20:20:28.474 [main] INFO  c.e.j.serviceImpls.JobServiceImpl - createJob method being called
+20:20:28.500 [main] INFO  c.e.j.serviceImpls.JobServiceImpl - getJob method being called
+20:20:28.528 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.jobfinder.services.UserServiceImplTest]: UserServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:20:28.535 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.jobfinder.JobFinderApplication for test class com.example.jobfinder.services.UserServiceImplTest
+20:20:28.726 [main] INFO  c.e.j.services.UserServiceImplTest - Before each test in UserServiceImplTest class
+20:20:28.728 [main] INFO  c.e.j.serviceImpls.UserServiceImpl - getUser method being called
+20:20:28.816 [main] INFO  c.e.j.services.UserServiceImplTest - Before each test in UserServiceImplTest class
+20:20:28.819 [main] INFO  c.e.j.services.UserServiceImplTest - Testing createCustomer method
+20:20:28.829 [main] INFO  c.e.j.services.UserServiceImplTest - user: com.example.jobfinder.entities.User@6321e29b
+20:20:28.830 [main] INFO  c.e.j.services.UserServiceImplTest - Execute & Assert
+20:20:28.831 [main] INFO  c.e.j.serviceImpls.UserServiceImpl - createUser method being called
+20:20:28.832 [main] INFO  c.e.j.services.UserServiceImplTest - savedUser: com.example.jobfinder.entities.User@6321e29b
+20:20:28.861 [main] INFO  c.e.j.services.UserServiceImplTest - Before each test in UserServiceImplTest class
+20:20:28.865 [main] INFO  c.e.j.services.UserServiceImplTest - updatedUser: com.example.jobfinder.entities.User@1100363d
+20:20:28.871 [main] INFO  c.e.j.serviceImpls.UserServiceImpl - updateUser method being called
+20:20:28.872 [main] INFO  c.e.j.services.UserServiceImplTest - result: com.example.jobfinder.entities.User@7d593bbc
+20:20:28.944 [main] INFO  c.e.j.services.UserServiceImplTest - Before each test in UserServiceImplTest class
+20:20:28.945 [main] INFO  c.e.j.services.UserServiceImplTest - Testing addJobtoUser method
+20:20:28.947 [main] INFO  c.e.j.serviceImpls.UserServiceImpl - addJobToUser method being called
+20:20:29.032 [main] INFO  c.e.j.services.UserServiceImplTest - Before each test in UserServiceImplTest class
+20:20:29.035 [main] INFO  c.e.j.serviceImpls.UserServiceImpl - addJobToUser method being called
+20:20:29.081 [main] INFO  c.e.j.services.UserServiceImplTest - Before each test in UserServiceImplTest class
+20:20:29.082 [main] INFO  c.e.j.services.UserServiceImplTest - Testing getUser method
+20:20:29.082 [main] INFO  c.e.j.services.UserServiceImplTest - user: com.example.jobfinder.entities.User@64b7066e
+20:20:29.083 [main] INFO  c.e.j.serviceImpls.UserServiceImpl - getUser method being called
+20:20:29.084 [main] INFO  c.e.j.services.UserServiceImplTest - retrievedUser: com.example.jobfinder.entities.User@64b7066e
+20:20:29.103 [main] INFO  c.e.j.services.UserServiceImplTest - Before each test in UserServiceImplTest class
+20:20:29.111 [main] INFO  c.e.j.serviceImpls.UserServiceImpl - deleteUser method being called
+20:20:29.220 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.jobfinder.JobFinderApplicationTests]: JobFinderApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:20:29.335 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.jobfinder.JobFinderApplication for test class com.example.jobfinder.JobFinderApplicationTests
+20:20:29.392 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:20:29.596 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:20:29.604 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:20:29.609 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:20:29.615 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+20:20:29.624 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+20:21:30.314 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+20:21:30.361 [restartedMain] INFO  c.e.jobfinder.JobFinderApplication - Starting JobFinderApplication using Java 17.0.8 with PID 79995 (/Users/hemmamano/Desktop/ntu-sctp/Module3_Project_Group2/job-finder/target/classes started by hemmamano in /Users/hemmamano/Desktop/ntu-sctp/Module3_Project_Group2/job-finder)
+20:21:30.362 [restartedMain] INFO  c.e.jobfinder.JobFinderApplication - No active profile set, falling back to 1 default profile: "default"
+20:21:30.417 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:21:30.418 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:21:31.337 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:21:31.400 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+20:21:31.936 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+20:21:31.945 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+20:21:31.947 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:21:31.947 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+20:21:32.004 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:21:32.005 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1586 ms
+20:21:32.096 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:21:32.262 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:job-finder user=SA
+20:21:32.264 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:21:32.274 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:job-finder'
+20:21:32.395 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:21:32.432 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+20:21:32.434 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+20:21:32.641 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:21:33.622 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20:21:33.691 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:21:34.236 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:21:34.359 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:21:34.676 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:21:34.681 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+20:21:34.730 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+20:21:34.753 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+20:21:34.768 [restartedMain] INFO  c.e.jobfinder.JobFinderApplication - Started JobFinderApplication in 4.715 seconds (process running for 5.443)
+20:28:31.865 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 22 class path changes (0 additions, 0 deletions, 22 modifications)
+20:28:32.056 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
+20:28:32.056 [Thread-6] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+20:28:32.073 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
+20:28:32.091 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
+20:28:32.145 [Thread-6] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:28:32.447 [Thread-6] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+20:28:32.449 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:28:32.454 [Thread-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:28:32.711 [restartedMain] INFO  c.e.jobfinder.JobFinderApplication - Starting JobFinderApplication using Java 17.0.8 with PID 79995 (/Users/hemmamano/Desktop/ntu-sctp/Module3_Project_Group2/job-finder/target/classes started by hemmamano in /Users/hemmamano/Desktop/ntu-sctp/Module3_Project_Group2/job-finder)
+20:28:32.711 [restartedMain] INFO  c.e.jobfinder.JobFinderApplication - No active profile set, falling back to 1 default profile: "default"
+20:28:33.220 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:28:33.264 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+20:28:33.454 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+20:28:33.455 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+20:28:33.455 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:28:33.456 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+20:28:33.472 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:28:33.473 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 757 ms
+20:28:33.513 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+20:28:33.516 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:job-finder user=SA
+20:28:33.516 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+20:28:33.516 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:job-finder'
+20:28:33.558 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:28:33.563 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:28:33.646 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20:28:33.654 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:28:33.831 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:28:33.867 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:28:33.977 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:28:33.980 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+20:28:33.996 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+20:28:33.998 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+20:28:34.005 [restartedMain] INFO  c.e.jobfinder.JobFinderApplication - Started JobFinderApplication in 1.339 seconds (process running for 424.684)
+20:28:34.010 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+20:29:49.144 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+20:29:49.170 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
+20:29:49.170 [Thread-8] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+20:29:49.173 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
+20:29:49.175 [Thread-8] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
+20:29:49.179 [Thread-8] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:29:49.399 [Thread-8] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+20:29:49.399 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+20:29:49.400 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+20:29:49.478 [restartedMain] INFO  c.e.jobfinder.JobFinderApplication - Starting JobFinderApplication using Java 17.0.8 with PID 79995 (/Users/hemmamano/Desktop/ntu-sctp/Module3_Project_Group2/job-finder/target/classes started by hemmamano in /Users/hemmamano/Desktop/ntu-sctp/Module3_Project_Group2/job-finder)
+20:29:49.478 [restartedMain] INFO  c.e.jobfinder.JobFinderApplication - No active profile set, falling back to 1 default profile: "default"
+20:29:49.732 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:29:49.745 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+20:29:49.871 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+20:29:49.872 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+20:29:49.873 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:29:49.873 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+20:29:49.894 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:29:49.895 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 415 ms
+20:29:49.948 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+20:29:49.952 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:job-finder user=SA
+20:29:49.952 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+20:29:49.952 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:job-finder'
+20:29:50.000 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:29:50.007 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:29:50.089 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20:29:50.095 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:29:50.252 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:29:50.290 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:29:50.376 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:29:50.380 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+20:29:50.394 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+20:29:50.396 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+20:29:50.401 [restartedMain] INFO  c.e.jobfinder.JobFinderApplication - Started JobFinderApplication in 0.945 seconds (process running for 501.08)
+20:29:50.405 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+20:29:54.829 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+20:29:54.835 [Thread-12] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8088"]
+20:29:54.835 [Thread-12] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+20:29:54.837 [Thread-12] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8088"]
+20:29:54.838 [Thread-12] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8088"]
+20:29:54.840 [Thread-12] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:29:55.048 [Thread-12] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+20:29:55.050 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+20:29:55.052 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+20:29:55.142 [restartedMain] INFO  c.e.jobfinder.JobFinderApplication - Starting JobFinderApplication using Java 17.0.8 with PID 79995 (/Users/hemmamano/Desktop/ntu-sctp/Module3_Project_Group2/job-finder/target/classes started by hemmamano in /Users/hemmamano/Desktop/ntu-sctp/Module3_Project_Group2/job-finder)
+20:29:55.142 [restartedMain] INFO  c.e.jobfinder.JobFinderApplication - No active profile set, falling back to 1 default profile: "default"
+20:29:55.378 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:29:55.389 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+20:29:55.467 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+20:29:55.468 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+20:29:55.468 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:29:55.469 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+20:29:55.481 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:29:55.481 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 338 ms
+20:29:55.508 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+20:29:55.510 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:job-finder user=SA
+20:29:55.510 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+20:29:55.511 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:job-finder'
+20:29:55.544 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:29:55.550 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:29:55.618 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20:29:55.626 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:29:55.782 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:29:55.820 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:29:55.946 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:29:55.949 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+20:29:55.967 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+20:29:55.971 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+20:29:55.978 [restartedMain] INFO  c.e.jobfinder.JobFinderApplication - Started JobFinderApplication in 0.853 seconds (process running for 506.657)
+20:29:55.981 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+20:30:00.296 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:30:00.699 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+20:30:00.700 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+20:30:00.818 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+20:30:13.122 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+20:30:13.156 [restartedMain] INFO  c.e.jobfinder.JobFinderApplication - Starting JobFinderApplication using Java 17.0.8 with PID 728 (/Users/hemmamano/Desktop/ntu-sctp/Module3_Project_Group2/job-finder/target/classes started by hemmamano in /Users/hemmamano/Desktop/ntu-sctp/Module3_Project_Group2/job-finder)
+20:30:13.158 [restartedMain] INFO  c.e.jobfinder.JobFinderApplication - No active profile set, falling back to 1 default profile: "default"
+20:30:13.196 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:30:13.197 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:30:13.841 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20:30:13.895 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+20:30:14.373 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9091 (http)
+20:30:14.381 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9091"]
+20:30:14.383 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:30:14.384 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+20:30:14.432 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:30:14.433 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1235 ms
+20:30:14.510 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:30:14.647 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:job-finder user=SA
+20:30:14.649 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:30:14.659 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:job-finder'
+20:30:14.805 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+20:30:14.842 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+20:30:14.844 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+20:30:15.046 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+20:30:15.788 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+20:30:15.842 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:30:16.393 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:30:16.518 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:30:16.757 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:30:16.764 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+20:30:16.809 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9091"]
+20:30:16.824 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9091 (http) with context path ''
+20:30:16.839 [restartedMain] INFO  c.e.jobfinder.JobFinderApplication - Started JobFinderApplication in 3.932 seconds (process running for 4.334)
+20:30:25.401 [http-nio-9091-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:30:25.402 [http-nio-9091-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:30:25.404 [http-nio-9091-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+20:31:14.980 [http-nio-9091-exec-1] INFO  c.e.j.serviceImpls.UserServiceImpl - createUser method being called
+20:31:25.743 [http-nio-9091-exec-3] INFO  c.e.j.serviceImpls.UserServiceImpl - addJobToUser method being called
+20:33:01.651 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:33:02.011 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+20:33:02.012 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:33:02.136 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
