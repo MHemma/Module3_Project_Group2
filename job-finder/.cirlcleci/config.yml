@@ -1,0 +1,86 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.0.1 
+  docker: circleci/docker@2.1.4
+
+jobs:
+  build:
+    docker:
+      - image: cimg/openjdk:17:0.9
+    steps:
+      - checkout
+      - run: |
+          echo "installing dependencies"
+          mvn -B -DskipTests clean package
+  test:
+    docker: 
+      - image: cimg/openjdk:17:0.9
+    steps:
+      - checkout
+      - run: |
+          echo "Running 3 unit tests.."
+          mvn -B test -Dtest=testGetJob,getUserTest,testGetUserNotFound
+  publish:
+    executor: docker/docker
+    steps:
+      - setup_remote_docker
+      - checkout
+      - docker/check
+      - docker/build:
+          image: hemma1108/job-finder
+          tag: v1.0.1
+      - docker/push:
+          image: hemma1108/job-finder
+          tag: v1.0.1
+  pull-and-deploy:
+    docker:
+      - image: cimg/openjdk:17:0.9
+    steps:
+      - setup_remote_docker
+      - heroku/install
+      - docker/pull:
+          images: hemma1108/job-finder:v1.0
+      - run:
+          name: Heroku Container Push With Image From Docker Hub
+          command: |
+              heroku container:login
+              docker tag hemma1108/job-finder:v1.0 registry.heroku.com/job-finder/web
+              #format --- docker tag <image name from docker hub> registry.heroku.com/<app-name>/web
+              docker push registry.heroku.com/job-finder/web
+              #format --- docker push <registry.heroku.com/<app-name>/web [to push to heroku container registry]
+              heroku container:release web -a job-finder
+              # release once in heroku container
+
+workflows:
+  ci_flow:
+    jobs:
+      - build
+      - test: 
+          requires: 
+            - build
+      - publish
+          requires:
+            - test
+    filters:
+      branches:
+        only:
+          - develop
+  cicd_flow:
+    jobs:
+      - build
+      - test: 
+          requires: 
+            - build
+      - publish
+          requires:
+            - test
+      - pull-and-deploy:
+          requires: 
+            - publish
+    filters:
+      branches:
+        only:
+          - release
+
+  
